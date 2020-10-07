@@ -1,0 +1,1703 @@
+
+/* Body Appearance */
+body {
+
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    /* -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; */
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+
+
+
+/* @keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+} */
+
+
+
+
+html {
+  overflow-x: hidden;
+}
+
+/* Removes scrollbar in chrome */
+::-webkit-scrollbar {
+    display: none;
+}
+
+    /* Removes auto underlining from Text */
+a {
+    text-decoration: inherit;
+}
+
+  /* Removes default blue highlight */
+button:focus {outline:0;}
+Input:focus {outline:0;}
+
+.leaderboard {
+  /*Appearance*/
+  background-color: transparent;
+  margin-left: 30%;
+  font-size: 200%;
+  /*Position*/
+  display: center;
+  text-align: center;
+  display: flex;
+}
+
+.leaderboardTop {
+  margin-top: 2%;
+}
+
+
+
+.Sbutton {
+  font-size: 175%;
+  border: solid 0px black;
+  background-color: transparent;
+  color: #545454;
+  width: 102%;
+  position: absolute;
+  height: 160%;
+  left: -0.9%
+}
+
+
+
+form {
+  display: inline-block;
+}
+
+.left {
+  right: 2%;
+}
+
+.right {
+  left: 2%;
+}
+
+
+.usernameBox {
+    /*Appearance*/
+    color: #004869;
+    font-family: sans-serif;
+    font-size: 200%;
+    /*Position*/
+    position: fixed;
+    float: right;
+    text-align: left;
+    margin-top: 19px;
+    right: 1%;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.usernameBox:hover {
+  color: #7289DA!important;
+  cursor: pointer;
+}
+
+.welcome {
+  /*Appearance*/
+  color: #004869;
+  font-family: sans-serif;
+  font-size: 32px;
+  height: 1px;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-left: 65px;
+  margin-top: -44px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.welcomeH {
+  /*Appearance*/
+  font-family: sans-serif;
+  font-size: 200%;
+  color: #004869;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 10.5%;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.welcomeH2 {
+  /*Appearance*/
+  font-family: sans-serif;
+  font-size: 200%;
+  color: #004869;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-top: 18px;
+  margin-left: 10.5%;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.logoutButton {
+  /*Appearance*/
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 28px;
+  border: solid 2px #f54242;
+  border-radius: 4px;
+  color: #f54242;
+  height: 37.5px;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-top: 0.2%;
+  margin-left: 15px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.logoutButton:hover {
+  background-color: #f54242;
+  cursor: pointer;
+}
+
+.darkmodeButton {
+  /*Appearance*/
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 28px;
+  border: solid 2px #5630b0;
+  border-radius: 4px;
+  color: #5630b0;
+  height: 37.5px;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-top: 0.2%;
+  margin-left: 130px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.darkmodeButton:hover {
+  color: #f2f2f2;
+  background-color: #5630b0;
+  cursor: pointer;
+}
+
+
+.lightmodeButton {
+  /*Appearance*/
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 28px;
+  border: solid 2px #fcf803;
+  border-radius: 4px;
+  color: #fcf803;
+  height: 37.5px;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-top: 0.2%;
+  margin-left: 130px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.lightmodeButton:hover {
+  color: #23272A;
+  background-color: #fcf803;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.darkmodeButtonH {
+  /*Appearance*/
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 28px;
+  border: solid 2px #5630b0;
+  border-radius: 4px;
+  color: #5630b0;
+  height: 37.5px;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-top: 0.2%;
+  margin-left: 20px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.darkmodeButtonH:hover {
+  color: #f2f2f2;
+  background-color: #5630b0;
+  cursor: pointer;
+}
+
+
+.lightmodeButtonH {
+  /*Appearance*/
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 28px;
+  border: solid 2px #fcf803;
+  border-radius: 4px;
+  color: #fcf803;
+  height: 37.5px;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-top: 0.2%;
+  margin-left: 20px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.lightmodeButtonH:hover {
+  color: #23272A;
+  background-color: #fcf803;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.backButton {
+    /*Appearance*/
+    font-family: sans-serif;
+    color: #004869;
+    /*Position*/
+    height: 1px;
+    position: fixed;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 9.5%;
+}
+
+.backButton:hover {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.nextButton {
+  background-color: transparent;
+  color: #545454;
+  margin-bottom: 6px;
+  margin-top: 15px;
+  font-size: 150%;
+  display: block;
+  float: right;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.nextButton:hover {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.prevButton {
+  background-color: transparent;
+  color: #545454;
+  margin-bottom: 6px;
+  margin-top: 15px;
+  font-size: 150%;
+  display: block;
+  float: left;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.prevButton:hover {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.displayNameModify {
+  margin-left: 120%;
+  position: absolute;
+}
+
+.card {
+  /*Appearance*/
+  background-color: transparent;
+  width: 20%;
+  height: 50%;
+  border: 0px solid black;
+  padding: 2%;
+  margin: 1%;
+  top: 1%;
+  right: 37%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+.card2 {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 12%;
+  height: 300px;
+  border: 2px solid #004869;
+  padding: 2%;
+  margin: 1%;
+  margin-top: 100px;
+  margin-left: 50%;
+  font-size: 150%;
+  /*Position*/
+  position: absolute;
+  display: center;
+  text-align: center;
+}
+
+.modifyFighter {
+  margin-top: 90px;
+  margin-left: 25px;
+  position: absolute;
+  margin-left: 10%;
+}
+
+.hr {
+  background-color: #f2f2f2;
+  border-bottom: solid 2px #004869;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 65px;
+  margin-left: -10%;
+  margin-top: -1%;
+  width: 150%;
+  position: fixed;
+  z-index: 1;
+}
+
+
+
+.bar1 {
+  background-color: #f2f2f2;
+  border-bottom: solid 2px #004869;
+  border-top: solid 2px #004869;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 50px;
+  margin-left: -15.5%;
+  margin-top: 80px;
+  margin-bottom: -1%;
+  width: 150%;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.bar2 {
+  background-color: #f2f2f2;
+  border: solid 2px #004869;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #004869;
+  height: 40px;
+  margin-left: -42%;
+  margin-top: 10px;
+  width: 50px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.bar2Display1 {
+  margin-top: 15px;
+  margin-left: 5px;
+  color: #004869;
+}
+
+.bar2Display2 {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 63%;
+  color: #004869;
+}
+
+.tab1 {
+  /*Appearance*/
+  font-family: sans-serif;
+  font-size: 200%;
+  color: #004869;
+  border-right: solid 2px #004869;
+  border-bottom: solid 2px #004869;
+  height: 42px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-left: 2%;
+  /*Position*/
+  float: left;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 9.3%;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.tab1:hover, .tab2:hover {
+  color: #7289DA!important;
+  cursor: pointer;
+}
+
+
+
+.tab2 {
+  /*Appearance*/
+  font-family: sans-serif;
+  font-size: 200%;
+  color: #004869;
+  border-right: solid 2px #004869;
+  border-bottom: solid 2px #004869;
+  height: 42px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  /*Position*/
+  float: left;
+  text-align: left;
+  margin-top: 0px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.tab3 {
+  /*Appearance*/
+  font-family: sans-serif;
+  font-size: 200%;
+  color: #004869;
+  height: 42px;
+  padding-top: 8px;
+  padding-right: 24.5%;
+  /*Position*/
+  float: right;
+  text-align: left;
+  margin-top: 0px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+
+
+
+
+
+
+
+
+
+
+.TWOcard2 {
+  /*Appearance*/
+  background-color: transparent;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  top: 10%;
+  right: 20%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+.TWOcard1 {
+  /*Appearance*/
+  background-color: transparent;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  top: 10%;
+  right: 50%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard1 {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  top: 10%;
+  right: 70%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard2 {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  top: 10%;
+  right: 37.5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard3 {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  top: 10%;
+  right: 5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+.THREEcard4 {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 70%;
+  right: 70%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard5 {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 70%;
+  right: 37.5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard6 {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 70%;
+  right: 5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+.THREEcard7 {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 130%;
+  right: 70%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard8 {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 130%;
+  right: 37.5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard9 {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 130%;
+  right: 5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+
+
+
+
+/*DARK MODE VERSION*/
+
+
+
+
+
+.TWOcard2D {
+  /*Appearance*/
+  background-color: transparent;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  top: 10%;
+  right: 20%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+.TWOcard1D {
+  /*Appearance*/
+  background-color: transparent;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  top: 10%;
+  right: 50%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard1D {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  top: 10%;
+  right: 70%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard2D {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  top: 10%;
+  right: 37.5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard3D {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  top: 10%;
+  right: 5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+.THREEcard4D {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 70%;
+  right: 70%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard5D {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 70%;
+  right: 37.5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard6D {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 70%;
+  right: 5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+.THREEcard7D {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 130%;
+  right: 70%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard8D {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 130%;
+  right: 37.5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.THREEcard9D {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  border: solid 2px #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 50px;
+  top: 130%;
+  right: 5%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+.THREEcard1:before, .THREEcard2:before, .THREEcard3:before, .THREEcard4:before, .THREEcard5:before, .THREEcard6:before, .THREEcard7:before, .THREEcard8:before, .THREEcard9:before, .TWOcard2:before, .TWOcard1:before {
+  position:absolute;
+  bottom:-1em; left:0;
+  width:100%;
+}
+
+.THREEcard1:after, .THREEcard1:before, .THREEcard2:after, .THREEcard2:before, .THREEcard3:after, .THREEcard3:before, .THREEcard4:after, .THREEcard4:before, .THREEcard5:after, .THREEcard5:before, .THREEcard6:after, .THREEcard6:before, .THREEcard7:after, .THREEcard7:before, .THREEcard8:after, .THREEcard8:before, .THREEcard9:after, .THREEcard9:before, .TWOcard2:after, .TWOcard2:before, .TWOcard1:after, .TWOcard1:before {
+  content: '';
+  border-bottom: solid 3px #004869;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.THREEcard1:hover:after, .THREEcard1:hover:before, .THREEcard2:hover:after, .THREEcard2:hover:before, .THREEcard3:hover:after, .THREEcard3:hover:before, .THREEcard4:hover:after, .THREEcard4:hover:before, .THREEcard5:hover:after, .THREEcard5:hover:before, .THREEcard6:hover:after, .THREEcard6:hover:before, .THREEcard7:hover:after, .THREEcard7:hover:before, .THREEcard8:hover:after, .THREEcard8:hover:before, .THREEcard9:hover:after, .THREEcard9:hover:before, .TWOcard2:hover:after, .TWOcard2:hover:before, .TWOcard1:hover:after, .TWOcard1:hover:before {
+  transform: scaleX(1);
+}
+
+
+/*DARK MODE VERSION*/
+
+
+
+.THREEcard1D:before, .THREEcard2D:before, .THREEcard3D:before, .THREEcard4D:before, .THREEcard5D:before, .THREEcard6D:before, .THREEcard7D:before, .THREEcard8D:before, .THREEcard9D:before, .TWOcard2D:before, .TWOcard1D:before {
+  position:absolute;
+  bottom:-1em; left:0;
+  width:100%;
+}
+
+.THREEcard1D:after, .THREEcard1D:before, .THREEcard2D:after, .THREEcard2D:before, .THREEcard3D:after, .THREEcard3D:before, .THREEcard4D:after, .THREEcard4D:before, .THREEcard5D:after, .THREEcard5D:before, .THREEcard6D:after, .THREEcard6D:before, .THREEcard7D:after, .THREEcard7D:before, .THREEcard8D:after, .THREEcard8D:before, .THREEcard9D:after, .THREEcard9D:before, .TWOcard2D:after, .TWOcard2D:before, .TWOcard1D:after, .TWOcard1D:before {
+  content: '';
+  border-bottom: solid 3px #7289DA;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.THREEcard1D:hover:after, .THREEcard1D:hover:before, .THREEcard2D:hover:after, .THREEcard2D:hover:before, .THREEcard3D:hover:after, .THREEcard3D:hover:before, .THREEcard4D:hover:after, .THREEcard4D:hover:before, .THREEcard5D:hover:after, .THREEcard5D:hover:before, .THREEcard6D:hover:after, .THREEcard6D:hover:before, .THREEcard7D:hover:after, .THREEcard7D:hover:before, .THREEcard8D:hover:after, .THREEcard8D:hover:before, .THREEcard9D:hover:after, .THREEcard9D:hover:before, .TWOcard2D:hover:after, .TWOcard2:hover:before, .TWOcard1:hover:after, .TWOcard1:hover:before {
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.THREEcard5:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard5:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard5:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+
+
+.THREEcard6:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard6:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard6:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+.THREEcard4:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard4:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard4:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+
+
+.THREEcard7:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard7:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard7:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+.THREEcard8:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard8:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard8:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+.THREEcard9:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard9:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard9:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+
+
+
+.TWOcard2:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.TWOcard2:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.TWOcard2:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+.TWOcard1:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.TWOcard1:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.TWOcard1:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+.THREEcard1:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard1:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+.THREEcard1:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard3:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard3:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard3:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+.THREEcard2:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard2:hover input {
+  filter: sepia(100%) contrast(400%) saturate(200%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard2:hover .Sbutton {
+  color: #004869;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/*DARK MODE VERSION*/
+
+
+
+.THREEcard5D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard5D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard5D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+
+
+.THREEcard6D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard6D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard6D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.THREEcard4D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard4D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard4D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+
+
+.THREEcard7D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard7D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard7D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.THREEcard8D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard8D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard8D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.THREEcard9D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard9D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard9D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+
+
+
+.TWOcard2D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.TWOcard2D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.TWOcard2D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.TWOcard1D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.TWOcard1D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.TWOcard1D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.THREEcard1D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard1D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.THREEcard1D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard3D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard3D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard3D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.THREEcard2D:hover {
+  border: solid 2px #e3e3e3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.THREEcard2D:hover input {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+  cursor: pointer;
+}
+
+.THREEcard2D:hover .Sbutton {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Pimg {
+
+}
+
+.Eimg {
+
+}
+
+.Simg {
+
+}
+
+.modifyInput {
+  margin-top: 10%;
+  margin-right: 50%;
+}
+
+::placeholder {
+  color: #545454;
+}
+
+::selection {
+  color: none;
+  background: none;
+}
+
+.createFighter {
+  margin-top: 90px;
+  margin-left: 25px;
+  position: absolute;
+  margin-left: 32%;
+}
+
+.Input0 {
+  border: 2px solid #004869;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f2f2f2;
+  color: #545454;
+  width: auto;
+  margin-bottom: 4px;
+  font-size: 250%;
+  display: block;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+
+
+.Input0:hover {
+  color: #7289DA;
+}
+
+.Input1 {
+  background-color: transparent;
+  color: #545454;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  font-size: 250%;
+  display: block;
+  float: right;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.Input0T {
+  border: 2px solid #004869;
+  background-color: #f2f2f2;
+  color: #545454;
+  width: auto;
+  margin-bottom: 15px;
+  margin-top: -15px;
+  font-size: 150%;
+  display: block;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.Input1R {
+  background-color: transparent;
+  color: #545454;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  font-size: 250%;
+  display: block;
+  float: left;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.Input1T {
+  background-color: transparent;
+  color: #545454;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  font-size: 150%;
+  display: block;
+  float: right;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.Input1RT {
+  background-color: transparent;
+  color: #545454;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  font-size: 150%;
+  display: block;
+  float: left;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.Input3 {
+  border: 0px solid black;
+  background-color: transparent;
+  color: lime;
+  margin-bottom: 4px;
+  margin-top: -4px;
+  font-size: 250%;
+  display: block;
+  float: left;
+}
+
+.Input3:hover {
+  color: #7289DA!important;
+}
+
+.Input4 {
+  border: 0px solid black;
+  background-color: transparent;
+  color: red;
+  margin-top: 3.5%;
+  margin-left: 5px;
+  font-size: 250%;
+  position: absolute;
+}
+
+.Input5 {
+  border: 0px solid black;
+  background-color: transparent;
+  color: red;
+  margin-top: 10%;
+  margin-left: 5px;
+  font-size: 250%;
+  position: absolute;
+}
+
+.Input2 {
+  border: 0px solid black;
+  background-color: transparent;
+  color: lime;
+  margin-bottom: 4px;
+  font-size: 250%;
+  display: block;
+  float: right;
+  margin-left: 15px;
+}
+
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: black;
+  opacity: 0.4;
+  outline: none;
+  margin-left: auto;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.highlight:hover {
+  filter: sepia(100%) contrast(100%) saturate(300%) hue-rotate(180deg);
+}
+
+.settings {
+  background-color: transparent;
+  color: #004869;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  margin-left: 15px;
+  font-size: 200%;
+  display: block;
+  float: left;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.lightBox {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: sans-serif;
+  font-size: 28px;
+  border: solid 2px #ebebeb;
+  border-radius: 4px;
+  color: #004869;
+  height: 37.5px;
+  /*Position*/
+  float: left;
+  text-align: left;
+  margin-top: 0.5%;
+  margin-left: 25px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.darkBox {
+  /*Appearance*/
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: sans-serif;
+  font-size: 28px;
+  border: solid 2px #ebebeb;
+  border-radius: 4px;
+  color: #23272A;
+  height: 37.5px;
+  /*Position*/
+  float: left;
+  text-align: left;
+  margin-top: 0.5%;
+  margin-left: 25px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.lightBox:hover {
+  color: #f2f2f2;
+  background-color: #004869;
+  cursor: pointer;
+}
+
+.darkBox:hover {
+  color: #f2f2f2;
+  background-color: #23272A;
+  cursor: pointer;
+}
