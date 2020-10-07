@@ -1,0 +1,396 @@
+
+/* Body Appearance */
+body {
+
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #292929;
+    overflow-x: hidden;
+    /* -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; */
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+    color: #828282;
+}
+
+
+
+
+.login-form {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.login-form h1 {
+    color: #4d4d4d;
+    font-size: 24px;
+}
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    border: 1px solid #dddddd;
+}
+.login-form input[type="submit"] {
+  margin-top: 15px;
+    background-color: #535b63;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.NAbutton {
+  font-size: 100%;
+  text-decoration: underline;
+  border: solid 0px black;
+  background-color: transparent;
+  color: #dddddd;
+  cursor: pointer;
+}
+
+/* Removes default blue highlight */
+button:focus {outline:0;}
+Input:focus {outline:0;}
+
+
+
+
+
+
+
+
+
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+}
+.login-form h1 {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-sizing:border-box;
+}
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+.NAbutton {
+  font-size: 100%;
+  text-decoration: underline;
+  border: solid 0px black;
+  background-color: transparent;
+  color: #4d4d4d;
+}
+
+::selection {
+  color: #7289DA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+} */
+
+
+
+
+html {
+  overflow-x: hidden;
+}
+
+/* Removes scrollbar in chrome */
+::-webkit-scrollbar {
+    display: none;
+}
+
+    /* Removes auto underlining from Text */
+a {
+    text-decoration: inherit;
+}
+
+  /* Removes default blue highlight */
+button:focus {outline:0;}
+Input:focus {outline:0;}
+
+.leaderboard {
+  /*Appearance*/
+  background-color: transparent;
+  margin-left: 30%;
+  font-size: 200%;
+  /*Position*/
+  display: center;
+  text-align: center;
+  display: flex;
+}
+
+.leaderboardTop {
+  margin-top: 2%;
+}
+
+
+
+.Sbutton {
+  font-size: 175%;
+  border: solid 0px black;
+  background-color: transparent;
+  color: #828282;
+  width: 102%;
+  position: absolute;
+  height: 160%;
+  left: -0.9%
+}
+
+.Sbutton:hover {
+  color: #d9d8b0;
+  cursor: pointer;
+}
+
+
+
+form {
+  display: inline-block;
+}
+
+.left {
+  right: 2%;
+}
+
+.right {
+  left: 2%;
+}
+
+
+.usernameBox {
+    /*Appearance*/
+    color: #828282;
+    font-family: sans-serif;
+    font-size: 200%;
+    /*Position*/
+    position: fixed;
+    float: right;
+    text-align: left;
+    margin-top: 19px;
+    right: 3.5%;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.settingsBox {
+    /*Appearance*/
+    color: #828282;
+    font-family: sans-serif;
+    font-size: 200%;
+    /*Position*/
+    position: fixed;
+    float: right;
+    text-align: left;
+    margin-top: 19px;
+    right: 0.5%;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.settingsBox:hover {
+  cursor: pointer;
+  filter: brightness(250%);
+}
+
+.checkBox {
+  height: 25px;
+  width: 25px;
+  color: #828282;
+}
+
+.welcome {
+  /*Appearance*/
+  color: #004869;
+  font-family: sans-serif;
+  font-size: 32px;
+  height: 1px;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-left: 65px;
+  margin-top: -44px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.welcomeH {
+  /*Appearance*/
+  font-family: sans-serif;
+  font-size: 200%;
+  color: #004869;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 10.5%;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.welcomeH2 {
+  /*Appearance*/
+  font-family: sans-serif;
+  font-size: 200%;
+  color: #828282;
+  /*Position*/
+  position: fixed;
+  float: left;
+  text-align: left;
+  margin-top: 18px;
+  margin-left: 10.5%;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+
+
+.backButton {
+    /*Appearance*/
+    font-family: sans-serif;
+    color: #004869;
+    /*Position*/
+    height: 1px;
+    position: fixed;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 9.5%;
+}
+
+.backButton:hover {
+  color: #7289DA;
+  cursor: pointer;
+}
+
+.TWOcard2 {
+  /*Appearance*/
+  background-color: #404040;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid 2px #696969;
+  width: 12%;
+  height: 500%;
+  padding: 2%;
+  margin: 1%;
+  top: 400%;
+  right: 40%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+.TWOcard1 {
+  /*Appearance*/
+  background-color: #404040;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid 2px #696969;
+  width: 12%;
+  height: 500%;
+  padding: 2%;
+  margin: 1%;
+  top: 400%;
+  left: 20%;
+  /*Position*/
+  display: center;
+  position: absolute;
+}
+
+
+.TWOcard1:hover,.TWOcard2:hover {
+  border-color: #d9d8b0;
+  cursor: pointer;
+}
+
+
+.hr {
+  background-color: #404040;
+  border-bottom: solid 2px #696969;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 65px;
+  margin-left: -10%;
+  margin-top: -1%;
+  width: 150%;
+  position: fixed;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::placeholder {
+  color: #545454;
+}
+
+::selection {
+  color: none;
+  background: none;
+}

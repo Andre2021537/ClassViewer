@@ -1,0 +1,23 @@
+html
+  head
+    title ClassCreator Login
+    link(rel='stylesheet' href='/css/login.css')
+  body
+  div(class="hr" id="hr")
+    div(class="usernameBox" id="username")= firstName
+    img(type="image" src="settingsIcon.png" class="settingsBox" height="40" width="40") 
+    div(class="welcomeH2" id="welcome")= 'ClassCreator'
+    div(type="hidden" id="lastName")= lastName
+      script.
+        var lastName = document.getElementById("lastName").innerHTML.charAt(0);
+        document.getElementById("username").innerHTML += " " + lastName;
+        
+        
+    form(action="studentlist" method="GET" class="TWOcard1" id="card1")
+      input(type="image" src="selectIcon.png" height="65%" width="65%")
+      button(class="Sbutton") Add Student
+      
+      
+    form(action="settings" method="GET" class="TWOcard2" id="card2")
+      input(type="image" src="class.png" height="75%" width="75%")
+      button(class="Sbutton") Your Class

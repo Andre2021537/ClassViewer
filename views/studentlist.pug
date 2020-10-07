@@ -1,0 +1,43 @@
+html
+  head
+    title Student List
+    link(rel='stylesheet', href='/css/login.css')
+  body()
+  div(class="hr" id="hr")
+    div(class="usernameBox" id="username")= username
+      div(class="welcomeH2" id="welcome")= 'ClassCreator'
+      script.
+        
+        
+        
+        
+        
+
+  div(class="bar1" id="bar1")
+
+  div(class="leaderboardTop")
+  br
+  each account in accounts
+    div(class="leaderboard" id="bar2")
+      div(class="bar2Display1" id="D")="ID: " + account.student_ID + " | Name: " + account.first_name + " " + account.last_name
+          //- p(id="wins")=account.account_wins
+  script.
+      
+      
+      let counterD1 = "D0";
+      function rankList(x) {
+        document.getElementById("D").id = counterD1;
+        counterD1 = "D" + x;
+
+      }    
+      for (i = 1; i < 100; i++) {
+        rankList(i);
+      }  
+      
+      
+      
+      
+
+      
+
+        
