@@ -51,10 +51,84 @@ button:focus {outline:0;}
 Input:focus {outline:0;}
 
 
+.studentIndex {
+  margin-left: -17.5em;
+  margin-top: 0.5em;
+  outline: solid 2px #828282;
+  width: 1000px;
+  text-align: left;
+  padding-left: 0.25em;
+}
 
+.studentIndex:hover {
+  cursor: pointer;
+  outline-color: #d9d8b0;
+  color: #d9d8b0;
+}
 
+.studentIndexAdd {
+  position: absolute;
+  border: solid 2px #828282;
+  border-radius: 4px;
+  background-color: inherit;
+  color: #828282;
+  width: auto;
+  height: 30px;
+  font-size: 24px;
+  float: right;
+  right: 38em;
+  margin-top: 0.8em;
+  line-height: 7.5px;
+}
 
+.studentIndexAdd:hover {
+  cursor: pointer;
+  border-color: #d9d8b0;
+  color: #d9d8b0;
+}
 
+.searchbar {
+  position: fixed;
+  right: 17em;
+  top: 8.5em;
+  border: solid 2px #828282;
+  border-radius: 4px;
+  background-color: inherit;
+  color: inherit;
+  font-size: 24px;
+}
+
+.searchbarH {
+  position: fixed;
+  right: 20em;
+  top: 7em;
+  font-size: 24px;
+}
+
+.noneDisplay {
+  position: fixed;
+  left: 7em;
+  top: 2em;
+  font-size: 48px;
+  display: none;
+}
+
+.searchbarE {
+  position: fixed;
+  right: 16em;
+  top: 8.5em;
+  border: solid 2px #828282;
+  border-radius: 4px;
+  background-color: inherit;
+  color: inherit;
+  font-size: 24px;
+}
+
+.searchbarE:hover {
+  cursor: pointer;
+  border-color: #d9d8b0;
+  color: #d9d8b0;
+}
 
 
 
@@ -294,6 +368,9 @@ form {
   user-select: none; /* Standard */
 }
 
+.welcomeH2 {
+  cursor: pointer;
+}
 
 
 .backButton {

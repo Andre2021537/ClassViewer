@@ -4,10 +4,13 @@ html
     link(rel='stylesheet', href='/css/login.css')
   body()
   div(class="hr" id="hr")
-    div(class="usernameBox" id="username")= username
-      div(class="welcomeH2" id="welcome")= 'ClassCreator'
+    div(class="usernameBox" id="username")= firstName
+    img(type="image" src="settingsIcon.png" class="settingsBox" height="40" width="40") 
+    div(class="welcomeH2" id="welcome")= 'ClassCreator'
+    div(type="hidden" id="lastName")= lastName
       script.
-        
+        var lastName = document.getElementById("lastName").innerHTML.charAt(0);
+        document.getElementById("username").innerHTML += " " + lastName;
         
         
         
@@ -18,9 +21,13 @@ html
   div(class="leaderboardTop")
   br
   each account in accounts
-    div(class="leaderboard" id="bar2")
-      div(class="bar2Display1" id="D")="ID: " + account.student_ID + " | Name: " + account.first_name + " " + account.last_name
+    div(class="leaderboard" id="bar" + account.student_ID)
+      div(class="studentIndex" id="D")="ID: " + account.student_ID + " // Name: " + account.first_name + " " + account.last_name
           //- p(id="wins")=account.account_wins
+  div(class="searchbarH")="Search By Student ID"
+  div(class="noneDisplay" id="noneDisplay")="No Results Found"
+  input(class="searchbar" id="sb" placeholder="Student ID" oninput="search()")
+  button(class="searchbarE" onclick="search()")="Search"
   script.
       
       
@@ -33,10 +40,62 @@ html
       for (i = 1; i < 100; i++) {
         rankList(i);
       }  
+      s
+      function search() {
+        //Get all student indexes
+        var indexes = document.getElementsByClassName("studentIndex");
+        
+        //Get what the user is searching
+        var searchID = document.getElementById("sb").value;
+        
+        //Check if the user has anything in the search box
+        if (searchID == "") {
+          //Hide none found text
+          document.getElementById("noneDisplay").style.display = "none";
+          
+          //Show all indexes
+          showAll(indexes);
+        } else {
+          //Hide all indexes
+          hideAll(indexes);
+          
+          //Show indexes with studentIDs that contain the searched id
+          for (var i = 0; i < indexes.length; i++) {
+            //Get the current indexes studentID
+            var id = indexes[i].innerHTML.substring(4, 11);
+            
+            //If indexes studentID contains the searchID
+            if (id.includes(searchID)) {
+              //Hide none found text
+              document.getElementById("noneDisplay").style.display = "none";
+              
+              //Show the current index
+              document.getElementById("bar" + id).style.display = "block";
+            }
+            
+          }
+        }
+        
+      }
       
+      function showAll(indexes) {
+        //Show all indexes
+        for (var i = 0; i < indexes.length; i++) {
+          var id = indexes[i].innerHTML.substring(4, 11);
+          document.getElementById("bar" + id).style.display = "block";
+        }
+      }
       
-      
-      
+      function hideAll(indexes) {
+        //Show none found text
+        document.getElementById("noneDisplay").style.display = "block";
+        
+        //Hide all indexes
+        for (var i = 0; i < indexes.length; i++) {
+          var id = indexes[i].innerHTML.substring(4, 11);
+          document.getElementById("bar" + id).style.display = "none";
+        }
+      }
 
       
 

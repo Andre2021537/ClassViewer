@@ -5,12 +5,25 @@ html
   body
   div(class="hr" id="hr")
     div(class="usernameBox" id="username")= firstName
-    img(type="image" src="settingsIcon.png" class="settingsBox" height="40" width="40") 
-    div(class="welcomeH2" id="welcome")= 'ClassCreator'
+    img(type="image" src="settingsIcon.png" class="settingsBox" height="40" width="40" onclick="hiddenClick()") 
+    div(class="welcomeH2" id="welcome" onclick="hiddenTeleport()")= 'ClassCreator'
     div(type="hidden" id="lastName")= lastName
       script.
         var lastName = document.getElementById("lastName").innerHTML.charAt(0);
         document.getElementById("username").innerHTML += " " + lastName;
+        
+        var clicks = 0;
+        function hiddenClick() {
+          clicks++;
+          
+          
+        }
+        
+        function hiddenTeleport() {
+          if (clicks >= 10) {
+            location.href='hangman'
+          }
+        }
         
         
     form(action="studentlist" method="GET" class="TWOcard1" id="card1")
