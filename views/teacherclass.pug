@@ -1,0 +1,70 @@
+html
+  head
+    title Your Class
+    link(rel='stylesheet', href='/css/login.css')
+  body()
+  div(class="hr" id="hr")
+    div(class="usernameBox" id="username")= firstName
+    img(type="image" src="settingsIcon.png" class="settingsBox" height="40" width="40") 
+    div(class="welcomeH2" id="welcome")= 'ClassCreator'
+    div(type="hidden" id="lastName")= lastName
+      script.
+        var lastName = document.getElementById("lastName").innerHTML.charAt(0);
+        document.getElementById("username").innerHTML += " " + lastName;
+        
+        
+        
+        
+
+  div(class="bar1" id="bar1")
+
+  div(class="leaderboardTop")
+  br
+  each account in accounts
+    div(class="leaderboard" id="bar2")
+      div(class="studentIndex" id="D")="ID: " + account.student_ID + " // Name: " + account.first_name + " " + account.last_name
+        button(class="studentIndexAdd")="Add"
+          //- p(id="wins")=account.account_wins
+  div(class="searchbarH")="Search By Student ID"
+  div(class="noneDisplay" id="noneDisplay")="No Results Found"
+  input(class="searchbar" id="sb" placeholder="Student ID")
+  button(class="searchbarE" onclick="search()")="Search"
+  script.
+      
+      
+      let counterD1 = "D0";
+      function rankList(x) {
+        document.getElementById("D").id = counterD1;
+        counterD1 = "D" + x;
+
+      }    
+      for (i = 1; i < 100; i++) {
+        rankList(i);
+      }  
+      
+      function search() {
+        var indexes = document.getElementsByClassName("studentIndex");
+        var searchID = document.getElementById("sb").value;
+        var amount = 0;
+        document.getElementById("noneDisplay").style.display = "none";
+        for (var i = 0; i < indexes.length; i++) {
+          var id = indexes[i].innerHTML.substring(4, 11);
+          console.log("id: " + id);
+          if (searchID != id) {
+            document.getElementsByClassName("studentIndex")[i].style.display = "none";
+          } else {
+            document.getElementsByClassName("studentIndex")[i].style.display = "block";
+            amount++;
+          }
+        }
+        
+        if (amount == 0) {
+          document.getElementById("noneDisplay").style.display = "block";
+        }
+      }
+      
+      
+
+      
+
+        
